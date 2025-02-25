@@ -18,8 +18,10 @@ jobs:
         with:
           version: 2.1.10
 
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Build with Gradle and giving permission
+        run: |
+          chmod +x gradlew
+          ./gradlew build
 
       - name: Run tests
         run: ./gradlew test
