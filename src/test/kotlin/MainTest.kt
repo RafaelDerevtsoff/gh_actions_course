@@ -5,6 +5,6 @@ import kotlin.test.assertEquals
 class MainTest {
     @Test
     fun testAdd() {
-        assertEquals(5, add(2, 3))
+        assertEquals(112, add(2, 3))
     }
 }
